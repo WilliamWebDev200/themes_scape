@@ -18,38 +18,4 @@ function enqueue_parent_style() {
 	add_action('wp_enqueue_scripts', 'enqueue_custom_script', 100);
 
 
-	/***=custom***/
-	add_action('widgets_init', 'custom');
-	function custom()
-	{
-	/**/
-		$BulkApparel = array(
-		'name' => __( 'BulkApparel Blog Sidebar ', 'scape_child' ),
-		'id' => 'bulkApparel__sidebar-blog',
-		'description' => '',
-		'class' => '',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '' );
-		register_sidebar( $BulkApparel );
-	}
-
-	add_action('widgets_init', 'footer_widget');
-	function footer_widget()
-	{
-	/**/
-		$BulkApparelFooter = array(
-		'name' => __( 'BulkApparel Footer ', 'scape_child' ),
-		'id' => 'bulkApparel__footer',
-		'description' => '',
-		'class' => '',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => 'bulkApparel__footer--title' );
-		register_sidebar( $BulkApparelFooter );
-	}
-
-
 ?>
