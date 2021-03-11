@@ -1,0 +1,77 @@
+
+
+// seconda inline css 
+// .wrap1 {
+//     margin: 0 auto;
+//     width: 768px;
+//     min-height: 480px;
+// }
+
+// .logo1 {
+//     text-align: center;
+// }
+
+// .logo1 img {
+//     width: 350px;
+// }
+
+// .logo1 p {
+//     color: #272727;
+//     font-size: 40px;
+//     margin-top: 1px;
+//     font-family: roboto;
+// }
+
+
+// @media screen and (max-width : 767px) {
+//     .wrap1 {
+//         width: 100%;
+//     }
+
+// }
+
+// @media screen and (max-width : 500px) {
+//     .logo1 img {
+//         width: 75%;
+//     }
+
+//     .logo1 p {
+//         font-size: 25px;
+//     }
+// }
+
+
+// last inline css
+
+.myText {
+    padding: 0px;
+    position: relative;
+    z-index: 13;
+    width: 39%;
+    color: rgb(10, 41, 114);
+    font-family: roboto condensed;
+    font-size: 12px;
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 8px;
+}
+
+.size_chart {
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    z-index: 10000;
+    color: #44414F;
+}
+
+table,
+th,
+td {}

@@ -1,0 +1,389 @@
+// .clrtext {
+//     position: absolute !important;
+//     right: 50px !important;
+//     font-size: 14px;
+// }
+.product-holder {
+    display: inline-block;
+    vertical-align: top;
+    border-collapse: collapse;
+    width: 25%;
+    border: 1px solid $color-lightgray4;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    @media only screen and (max-width: 1000px) {
+        width: 50%;
+    }
+    .product-image-box {
+        padding: 2.5px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        a {
+            float: left;
+            width: 100%;
+            display: block !important;
+            height: 100%;
+            margin: 0 auto;
+            width: auto !important;
+            position: relative;
+            overflow: hidden;
+        }
+        span {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            z-index: 1;
+            display: block;
+            background: $color-darkred;
+            font-size: 11px;
+            font-weight: 700;
+            transform: rotate(-10deg);
+            color: $color-white;
+            padding: 4px 8px;
+        }
+        img {
+            margin-bottom: 0 !important;
+            max-width: 100%;
+            @media only screen and (max-width: 769px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+#product-row1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-box {
+    float: right;
+    width: 80%;
+    min-height: 100vh;
+    .product-row {
+        >h5 {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .product-box {
+        width: 77%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-box {
+        width: 100%;
+    }
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    h2 {
+        float: left;
+        background: $color-white;
+        width: 100%;
+        border: 1px solid #dedede;
+        box-sizing: border-box;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 12px;
+        color: $color-gray;
+    }
+    @media only screen and (max-width: 1000px) {
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.name-row {
+    float: left;
+    width: 100%;
+    border-top: 1px solid $color-lightgray;
+    padding: 10px 0;
+    @media only screen and (max-width: 767px) {
+        border: none !important;
+        padding: 2px 0 !important;
+    }
+    >a {
+        display: flex;
+    }
+}
+
+.cost-row {
+    float: left;
+    width: 100%;
+    border-top: 1px solid $color-lightgray;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 767px) {
+        border-top: none;
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .product-logo-box img {
+        max-width: 100%;
+    }
+}
+
+.product-logo {
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.product-price {
+    float: left;
+    width: 60%;
+    text-align: right;
+    font-size: 21px;
+    font-weight: 700;
+    color: $color-darkred;
+    @media only screen and (max-width: 1200px) {
+        width: 50%;
+        margin-top: -8px;
+    }
+    @media screen and (max-width: 1000px) {
+        margin-top: 0px;
+        width: 50%;
+        margin-top: 0px;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+    }
+    h3 {
+        float: right;
+    }
+}
+
+.starting_at {
+    font-size: 12px;
+    color: $color-dark4;
+    margin-right: 4px;
+    font-weight: normal;
+}
+
+.product-image {
+    .active {
+        background: none !important;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.product-color {
+    font-size: 13px;
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.product-price {
+    float: left;
+    width: 60%;
+    text-align: right;
+    font-size: 21px;
+    font-weight: 700;
+    color: $color-darkred;
+    h3 {
+        float: right;
+    }
+    @media only screen and (max-width: 1200px) {
+        width: 50%;
+        margin-top: -8px;
+    }
+    @media only screen and (max-width: 1000px) {
+        margin-top: 0px;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 18px;
+    }
+}
+
+.starting_at {
+    font-size: 12px;
+    color: $color-dark4;
+    margin-right: 4px;
+    font-weight: normal;
+}
+
+.product-info {
+    float: left;
+    width: 100%;
+    padding: 0 5%;
+    @media only screen and (max-width: 767px) {
+        // padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+}
+
+.product-name {
+    font-size: 13px;
+    color: $color-dark4;
+    text-align: left;
+    padding-left: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    // height: 30px !important;
+    @media screen and (max-width: 767px) {
+        padding-left: 0;
+    }
+}
+
+.selectJumpto {
+    height: 35px;
+    padding: 7px 6px;
+    position: absolute;
+    right: 185px;
+    // top: 1px;
+    top: -1px;
+    width: 136px;
+    line-height: 30px;
+}
+
+.result-info {
+    float: left;
+    padding: 5px 12px;
+    width: 100%;
+    border: 1px solid $color-lightgray;
+    // border-top: none;
+    box-sizing: border-box;
+}
+
+.result-info-left {
+    float: left;
+}
+
+.result-info-right {
+    float: right;
+}
+
+#psjumpTo,
+#lstjumpto,
+#selectPrductSort {
+    margin-bottom: 0;
+    border: 1px solid $color-gray-border;
+}
+
+.errordiv {
+    >label {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: $color-white;
+        width: 100%;
+        font-weight: 400 !important;
+        background-color: $color-red2;
+        padding-left: 50px;
+        padding-right: 30px;
+        background-image: url(../images/error-icon.png);
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: 10px center;
+        background-size: 24px;
+        float: left;
+        box-sizing: border-box;
+    }
+    .glyphicon-remove {
+        position: absolute;
+        right: 25px;
+        top: 18px;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+#selectPrductSort {
+    position: absolute;
+    right: 8px;
+    width: 150px;
+    // top: 1px;
+    top: -1px;
+    height: 35px;
+    padding: 7px 6px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #psjumpTo {
+        // position: relative !important;
+        right: 0px !important;
+        padding: 5px !important;
+        width: 75px !important;
+        position: inherit !important;
+    }
+    #selectPrductSort {
+        // position: relative !important;
+        float: right !important;
+        right: 0px !important;
+        padding: 5px !important;
+        width: 125px !important;
+        margin-left: auto;
+        position: inherit !important;
+    }
+    .result-info {
+        border-bottom: 1px solid #c9c9c9;
+        border-top: 1px solid #c9c9c9;
+    }
+    .product-box .product-row {
+        position: inherit;
+    }
+    .product-box .product-row>h5 {
+        width: 100%;
+    }
+}
+
+.homepage {
+    @media only screen and (max-width: 1000px) {
+        .site-sidebar {
+            display: none;
+        }
+        .product-box {
+            width: 100%;
+        }
+    }
+}
+
+#psjumpTo,
+#lstjumpto,
+#selectPrductSort {
+    @media only screen and (min-width: 1000px) {
+        top: 5px;
+    }
+}

@@ -1,0 +1,303 @@
+.rating-container,
+.rating-container + span {
+  float: left;
+}
+
+.a-text-bold {
+  font-weight: 700 !important;
+}
+
+.a-size-large {
+  text-rendering: optimizelegibility;
+}
+
+.a-size-large {
+  font-size: 21px !important;
+  line-height: 1.3 !important;
+}
+
+.a-color-success {
+  color: #008a00 !important;
+}
+
+.rating-md {
+  font-size: 1.6em;
+}
+
+.crevleftrat {
+  float: left;
+  width: 5%;
+}
+
+.crevmidtrat {
+  float: left;
+  margin-top: -6px;
+  width: 15%;
+}
+
+.crevrigtrat {
+  float: left;
+  width: 10%;
+}
+
+#books {
+  border-bottom: none !important;
+}
+
+#books tr {
+  background: none !important;
+}
+
+.rw-avg {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.review-head-tip a {
+  color: #0a2972;
+}
+
+.review-head-tip a:hover {
+  text-decoration: underline !important;
+}
+
+.descrption ul li {
+  margin: 2px 0px;
+}
+
+.crevleftrat,
+.crevmidtrat,
+.crevrigtrat {
+  width: auto !important;
+}
+
+.product-holder:nth-child(2) .color-palate {
+  left: 0px !important;
+}
+
+.product-holder:nth-child(2) .color-palate .color-wrapper-home::after {
+  right: 80%;
+}
+
+.readmore {
+  display: none;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .product-holder .color-palate {
+    left: 0px !important;
+  }
+
+  .product-holder .color-palate .color-wrapper-home::after {
+    right: 80%;
+  }
+
+  /*Start - Hide and Unhide ( Bulk Order) - Roi - 06/01/2020 - 7:40PM */
+  .orderallcolorssizes {
+    display: none;
+  }
+
+  /*Start - Hide and Unhide ( Bulk Order) - Roi - 06/01/2020 - 7:40PM */
+}
+
+@media screen and (max-width: 768px) {
+  .rating-animate {
+    text-align: center;
+  }
+
+  .rating-container,
+  .rating-container + span {
+    float: none;
+  }
+
+  .overall-rating {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .readmore {
+    display: block;
+  }
+
+  .prod-desc-wrapper {
+  }
+
+  .prod-desc-small {
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .prod-desc-big {
+    height: auto;
+  }
+
+  .prod-title {
+    text-transform: capitalize;
+    padding-bottom: 2px;
+    font-size: 18px;
+  }
+}
+
+/* Start - Nicer added to cart popup - John - 07/30/2020 */
+
+.window-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 390px;
+  background: white;
+}
+
+.window-popup > h3 {
+  background-color: #44414f;
+  padding: 6px;
+  text-align: center;
+  color: white;
+}
+
+.window-popup .items {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 46vh;
+}
+
+.window-popup .items li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.window-popup .items li .left-pane img {
+  width: auto;
+  height: 100px;
+  display: block;
+}
+
+.window-popup .items li .right-pane label {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.window-popup .items li .right-pane label span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
+.window-popup .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.window-popup .button-container a {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  margin: 6px;
+  text-align: center;
+}
+
+.window-popup .items li .right-pane {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #cart-preview-c {
+    width: 70%;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #cart-preview-c {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .window-popup .button-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .window-popup .items li .left-pane img {
+    height: 45px;
+  }
+}
+
+/* End - Nicer added to cart popup - John - 07/30/2020 */
+
+/* Start - For mobile add small color boxes to click on - John - 08/27/2020 */
+ul.featured-colors.mobile-only {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  ul.featured-colors.mobile-only {
+    display: grid !important;
+  }
+}
+
+ul.featured-colors {
+  grid-template-columns: auto auto auto auto auto;
+}
+
+ul.featured-colors li {
+  margin: auto;
+}
+
+#toggleColorBox {
+  float: right;
+}
+
+/* End - For mobile add small color boxes to click on - John - 08/27/2020 */
+
+/* Start - Adjust color box - From Christian - 08/27/2020 */
+@media screen and (max-width: 768px) {
+  .featured-colors.mobile-only {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 50% !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -6px;
+  }
+
+  .featured-colors li {
+    margin-right: 2px !important;
+  }
+
+  .featured-toggle {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+.all-colors {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* End - Adjust color box - From Christian - 08/27/2020 */

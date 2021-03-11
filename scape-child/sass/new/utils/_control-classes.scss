@@ -1,0 +1,27 @@
+.desktop--only {
+    display: block;
+    @media only screen and (max-width: 1025px) {
+        display: none !important;
+    }
+}
+
+.desktop-tablet--only {
+    display: block;
+    @media only screen and (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+.tablet--only {
+    display: none;
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+        display: block !important;
+    }
+}
+
+.mobile--only {
+    display: none;
+    @media only screen and (max-width: 767px) {
+        display: block !important;
+    }
+}

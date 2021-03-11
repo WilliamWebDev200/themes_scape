@@ -1,0 +1,20 @@
+#product-row1 {
+    .result-info {
+        margin-bottom: 15px;
+        margin-top: 10px;
+        border: 1px solid $color-gray-border !important;
+    }
+    .col-lg-3.col-md-4.col-sm-6 {
+        margin-bottom: 15px;
+        @media only screen and (max-width: 480px) {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+#product-row1 {
+    .result-info {
+        border: 0 !important;
+        padding: 0;
+    }
+}

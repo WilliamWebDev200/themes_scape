@@ -1,0 +1,426 @@
+/*Start - Better search with images like SnS search - Roi - 09/08/2020*/
+.header-search-box {
+  position: relative;
+}
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+
+.search-show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.header-search-box a {
+  background: none !important;
+  float: unset !important;
+  border-radius: none !important;
+  height: auto !important;
+  color: none !important;
+}
+
+// .outside {
+//   display: none !important;
+// }
+
+// @include respond(laptop-s) {
+//   .outside {
+//     display: -webkit-box !important;
+//     display: -ms-flexbox !important;
+//     display: flex !important;
+//   }
+// }
+
+.search {
+  display: none;
+  position: absolute;
+  width: 950px;
+  background: $color-white;
+  z-index: 1000;
+  right: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: left;
+
+  @media (max-width: 79em) {
+    right: -100%;
+  }
+
+  @include respond(laptop-s) {
+    position: absolute;
+    width: 95%;
+    right: 10px;
+    top: 130px;
+  }
+
+  @include respond(tab-land) {
+    width: 270px;
+    top: 45px;
+  }
+
+  @include respond(mobile-lg) {
+    border-radius: 1px;
+  }
+
+  @include respond(mobile-m) {
+    width: 210px;
+  }
+
+  &__live {
+    width: 72%;
+    padding: 20px 20px 30px 20px;
+
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+
+  &__default {
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    background: $color-white;
+    z-index: 10;
+    padding: 10px;
+    border: 1px solid rgba($color-black, 0.2);
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+    border-radius: 3px;
+    z-index: 1000;
+
+    @include respond(laptop-s) {
+      width: 220px;
+      top: 125px;
+      right: 15px;
+    }
+    @include respond(tab-land) {
+      width: 200px;
+      top: 45px;
+      right: 0;
+    }
+    @include respond(mobile-m) {
+      width: 160px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 10px 0;
+
+      @include respond(mobile-lg) {
+        font-size: 18px;
+      }
+    }
+
+    a {
+      display: block;
+      color: $color-gray3;
+      padding: 10px 5px;
+      @include respond(mobile-lg) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__popular {
+  }
+
+  &__recent {
+  }
+
+  &__help {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-top: 1px solid $color-white-8;
+  }
+
+  &__help-title {
+    font-size: 20px;
+    color: $color-gray4;
+  }
+
+  &__help-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+
+  &__help-items {
+    border: 1px solid $color-gray2;
+    color: $color-gray;
+    border-radius: 50px;
+
+    a {
+      display: flex;
+      padding: 7px 20px;
+      font-size: 16px;
+      color: $color-gray;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__live-header {
+    font-size: 12px;
+    margin-bottom: 15px;
+
+    h1 {
+      text-align: left;
+
+      span {
+        color: $color-darkblue;
+      }
+    }
+  }
+  &__live-list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 20%;
+    }
+  }
+
+  &__live-btn {
+    display: flex;
+    color: $color-white !important;
+    background-color: $color-darkblue !important;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  &__auto {
+    width: 260px;
+    padding: 10px;
+    background-color: $color-white3;
+    min-height: 320px;
+
+    @include respond(laptop-s) {
+      width: 35%;
+    }
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      background: $color-white;
+      width: 100%;
+      padding: 8px;
+      padding-top: 0;
+    }
+  }
+
+  &__auto-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__auto-text {
+    font-size: 18px;
+    margin-right: auto;
+
+    span {
+      font-weight: 600;
+      color: $color-darkblue;
+    }
+  }
+
+  &__auto-result {
+    position: relative;
+    width: 100%;
+    padding: 10px 5px;
+
+    @include respond(tab-land) {
+      padding-top: 0;
+    }
+    li {
+      width: 100%;
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      &:hover,
+      &:focus {
+        a {
+          @include hoverText();
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      width: 100%;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 500;
+      font-size: 18px;
+      text-align: left !important;
+      @include respond(mobile-m) {
+        font-size: 16px;
+      }
+
+      @include respond(mobile-m) {
+        font-size: 15px;
+      }
+
+      span {
+        display: inline-block;
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.card {
+  &--search {
+    width: 100%;
+    padding: 5px !important;
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+
+    &:hover {
+      @include hoverImage();
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__img {
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      border-radius: 2px;
+      user-select: none;
+    }
+
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__body {
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 400;
+    }
+
+    &__brand {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      height: 24px;
+      margin-top: 2px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__title {
+      border-bottom: 0;
+      padding: 5px 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.header-search-box {
+  text-align: left !important;
+}
+
+#ajax_response {
+  z-index: 0 !important;
+}
+
+/*End - Better search with images like SnS search - Roi - 10/08/2020*/
+
+/*Start - Live search updates - Roi - 09/22/2020*/
+.back-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    font-size: 15px;
+    background: none !important;
+    color: $color-black;
+  }
+}
+
+.search-hov-image {
+  @include hoverImage();
+}
+
+.search-hov-text {
+  a {
+    @include hoverText();
+  }
+}
+
+.back-results {
+  position: absolute;
+  left: 5px;
+  margin-top: 6px;
+}
+
+.see-more-results:hover,
+.see-more-results:focus,
+.back-results:hover,
+.back-results:focus,
+.view-more-results:hover,
+.view-more-results:focus {
+  transform: none !important;
+}
+
+li.back-results {
+  width: 50px;
+  z-index: 99999;
+}
+
+/*End - Live search updates - Roi - 09/22/2020*/
+
+/*Start - improve search by removing wrong results and also adding AKA - Roi - 09/21/2020*/
+.see-more-results a,
+.view-all-results a {
+  text-align: center !important;
+  color: $color-darkred;
+  padding: 12px 0;
+  font-weight: bold;
+  display: block;
+}
+
+/*End - improve search by removing wrong results and also adding AKA - Roi - 09/21/2020*/

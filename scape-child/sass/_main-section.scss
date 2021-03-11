@@ -1,0 +1,160 @@
+div#main {
+    margin-top: 150px;
+}
+
+.header-bulkapparel {
+    &.header_sticky_active {
+        a.wtbx_header_logo {
+            width: 160px !important;
+            height: 60px !important;
+            img {
+                width: auto !important;
+                height: 100% !important;
+            }
+        }
+    }
+    &__top {
+        max-width: 1400px;
+        margin: auto;
+    }
+    &__section {
+        background: $color-white !important;
+        ;
+    }
+    &__holder {
+        height: auto !important;
+        line-height: inherit !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    &__logo {
+        position: inherit !important;
+        .header_sticky.header_sticky_active .wtbx_header_logo {
+            width: inherit;
+            height: inherit;
+            background: transparent !important;
+        }
+    }
+    &__navigation {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        background: $color-primary;
+        display: flex;
+        align-items: center;
+        height: auto !important;
+        nav.wtbx_header_part.wtbx_menu_nav {
+            height: auto !important;
+            float: none !important;
+            max-width: 1400px;
+            margin: auto;
+            li {
+                a {
+                    height: auto !important;
+                    line-height: 24px !important;
+                    color: $color-white !important;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+.bulkapparel-footer {
+    background: $color-primary;
+    color: $color-white;
+    padding-top: 50px;
+    &__menu {
+        h2.widgettitle {
+            font-size: 20px;
+            color: $color-white;
+            font-size: roboto;
+            font-family: $font-secondary;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        ul.menu {
+            li {
+                a {
+                    font-weight: 300;
+                    color: $color-white !important;
+                    font-family: $font-secondary;
+                    font-size: 15px;
+                    &:before {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-left: 7px solid $color-white;
+                        border-top: 4px solid transparent;
+                        border-bottom: 4px solid transparent;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__text {
+        &--message,
+        &--contact,
+        &--support,
+        &--chat {
+            p {
+                display: block;
+                margin: 0;
+                font-style: normal;
+            }
+        }
+        &--support {
+            text-align: center;
+            color: $color-white;
+            a {
+                color: $color-white;
+            }
+        }
+        &--contact {
+            text-align: center;
+            color: $color-yellow;
+            font-size: 16px;
+            padding: 40px 0;
+        }
+        &--chat {
+            text-align: center;
+            margin-bottom: 25px;
+            p {
+                color: $color-yellow;
+                font-size: 16px;
+            }
+            a {
+                color: $color-white;
+            }
+        }
+        &--message {
+            p {
+                color: $color-white !important;
+                font-size: 16px;
+            }
+            blockquote {
+                padding: 0 !important;
+                margin: 0;
+                font-size: inherit;
+                color: $color-white !important;
+                font-family: $font-secondary;
+                em {
+                    strong {
+                        font-style: normal;
+                        font-size: 12px;
+                        color: $color-white;
+                    }
+                }
+                >p {
+                    >strong {
+                        color: $color-green;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

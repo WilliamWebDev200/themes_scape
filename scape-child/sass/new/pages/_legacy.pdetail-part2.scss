@@ -1,0 +1,223 @@
+.secured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 20px;
+  position: relative;
+}
+
+@media (max-width: 48em) {
+  .secured {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+.secured__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  align-items: center;
+  color: #012f67;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.secured__btn span {
+  font-size: 18px;
+  color: #22b14c;
+  margin-right: 5px;
+}
+
+.secured__btn:hover {
+  text-decoration: underline;
+}
+
+#securedPane {
+  position: absolute;
+  display: none;
+  width: 250px;
+  height: 270px;
+  border: 2px solid #012f67;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 100 !important;
+  background: #fff;
+  bottom: -280px;
+  right: -35px;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 79em) {
+  #securedPane {
+    right: 20px;
+  }
+}
+
+@media (max-width: 48em) {
+  #securedPane {
+    right: 50% !important;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 37.5625em) {
+  #securedPane {
+    font-size: 15px;
+    padding: 12px;
+    width: 230px;
+    height: 260px;
+    bottom: -270px;
+  }
+}
+
+@media (max-width: 23.4375em) {
+  #securedPane {
+    width: 220px;
+  }
+}
+
+#securedPane h2 {
+  margin-bottom: 10px;
+  color: #012f67;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 37.5625em) {
+  #securedPane h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 23.4375em) {
+  #securedPane h2 {
+    font-size: 17px;
+  }
+}
+
+#securedPane .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgba(1, 47, 103, 0.3);
+  font-size: 22px;
+  color: #012f67;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 37.5625em) {
+  #securedPane .icon {
+    font-size: 20px;
+    height: 46px;
+    width: 46px;
+  }
+}
+
+.scr-show {
+  display: block !important;
+}
+
+.carttotal .secured {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 48em) {
+  .carttotal #securedPane {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/*Start - Add to cart - Roi/Christian - 09/10/2020*/
+.secured,
+.pro-add {
+  width: 75% !important;
+}
+
+@media (max-width: 1000px) {
+  .secured,
+  .pro-add {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 79em) {
+  #addtoSCartbtn {
+    padding: 15px 30px !important;
+  }
+}
+
+/*End - Add to cart - Roi/Christian - 09/10/2020*/
+
+/*Start - Secure Checkout allows hiding if click outside - Roi - 09/17/2020*/
+#securedPane .exit {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#securedPane .exit:hover {
+  color: red;
+}
+
+@media (max-width: 37.5625em) {
+  #securedPane .exit {
+    font-size: 16px;
+  }
+}
+
+/*End - Secure Checkout allows hiding if click outside - Roi - 09/17/2020*/
+
+/*Start - There is no way to exit color select and first items overlap on navbar - CL - 09/23/2020*/
+@media screen and (max-width: 768px) {
+  .color-dw ul {
+    top: 65px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .color-dw ul {
+    top: 70px;
+  }
+}
+
+/*End - There is no way to exit color select and first items overlap on navbar - CL - 09/23/2020*/

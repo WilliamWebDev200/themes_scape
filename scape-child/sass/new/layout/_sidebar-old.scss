@@ -1,0 +1,131 @@
+.lp-filter {
+  border-bottom: none;
+
+  &__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    background: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    color: #002e66;
+    padding: 8px 10px;
+    background: #fafafa;
+    width: 100%;
+
+    span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+    }
+  }
+
+  .h {
+    color: #002e66 !important;
+  }
+
+  .down,
+  .h {
+    font-weight: 700 !important;
+    background-color: unset !important;
+    transition: all 300ms ease;
+    border: none !important;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+      background-color: #fafafa;
+    }
+  }
+
+  .remove {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002e66;
+    color: #fff;
+    font-weight: 200;
+    font-size: 13px;
+    height: 20px !important;
+    width: 20px !important;
+    padding: 0 !important;
+  }
+
+  .filters {
+    display: flex;
+    background: none !important;
+
+    span {
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #fafafa;
+    }
+  }
+}
+
+.tab-info-holder {
+  padding-bottom: 10px !important;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fafafa !important;
+  clear: both;
+
+  a {
+    display: flex;
+    background: none !important;
+    background-color: red !important;
+    border-bottom: none !important;
+
+    input[type=checkbox] {
+      margin-right: 5px;
+    }
+  }
+
+  b {
+    margin-left: auto !important;
+  }
+}
+
+.sidenav {
+  ul {
+    li {
+      border-bottom: 1px solid #acacac !important;
+    }
+
+    ul {
+      li {
+        border-bottom: none !important;
+
+        a {
+          background-color: #fafafa !important;
+          position: relative;
+          -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+          padding-left: 10px !important;
+
+          &:hover {
+            background-color: #e9efff !important;
+            color: #131e9f !important;
+          }
+
+          input[type="checkbox"] {
+            margin-right: 8px;
+            margin-left: -2px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+#shipcostid3 {
+width: 100%;
+float: left;
+margin-bottom: 15px;
+color: #009900;
+line-height: 25px;
+
+}
+
+.discClass3 td,
+.discClass3 {
+color: #d83939;
+}
+
+/*Start - gift certificate codes that can be used - Roi - 06/19/2020 9:22am*/
+// .AT3CListWrap {
+//     width: 300px;
+//     z-index: 9999;
+//     box-sizing: border-box;
+//     ul {
+//         display: block;
+//         li {
+//             width: 100%;
+//         }
+//     }
+//     table {
+//         box-sizing: border-box;
+//     }
+//     #shipcostid3 {
+//         border-bottom: 1px solid #ddd;
+//         padding-bottom: 10px;
+//     }
+//     .carttotal {
+//         .discClass3{
+//             td{
+//                 color: #d83939 !important;
+//                 }
+//         }
+//         table {
+//             box-sizing: border-box;
+//             tr:nth-child(2) {
+//                 td {
+//                     border-top: 1px solid #d7d7d7 !important;
+//                     padding-top: 5px;
+//                     font-size: 18px;
+//                     }
+//             }
+//             tr:last-child {
+//                 td {
+//                     border-top: none;
+//                     padding-top: 0px;
+//                     font-size: 18px;
+//                     color: #44414F;
+//                     }
+//             }
+//         }
+//     }
+// }
+
+.view_cart_link {
+   font-size: 18px;
+   color: #0a2972;
+   text-decoration: underline;
+   font-weight:400 !important;
+}

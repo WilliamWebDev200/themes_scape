@@ -1,0 +1,17 @@
+.product-title__title {
+    min-height: 25px;
+}
+
+.product-title__action {
+    min-height: 35px;
+}
+
+.product-colors__bottom {
+    min-height: 30px;
+}
+
+@media only screen and (max-width:480px) {
+    .product-title__action {
+        min-height: 25px;
+    }
+}

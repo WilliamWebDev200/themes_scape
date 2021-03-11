@@ -1,0 +1,39 @@
+.open-invisible {
+    display: none;
+    &--open {
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        height: 100%;
+        display: block !important;
+    }
+}
+
+.navbar__footer {
+    &.show-sidebar {
+        .navbar__footer-item {
+            // .mega-menu {
+            //     display: none !important;
+            // }
+            // .selected_image .mega-menu {
+            //     display: none !important;
+            // }
+            // &.show-sub-list {
+            //     .mega-menu {
+            //         display: flex !important;
+            //     }
+            // }
+            // &:hover,
+            // &:focus {
+            //     .show-sub-list .mega-menu {
+            //         display: flex !important;
+            //     }
+            //     .selected_image
+            //     .mega-menu {
+            //         display: flex !important;
+            //     }
+            // }
+        }
+    }
+}

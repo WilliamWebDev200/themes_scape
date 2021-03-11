@@ -1,0 +1,20 @@
+@media (min-width: 1000px) {
+    .col-lg-cs-14 {
+        flex: 0 0 14.28%;
+        max-width: 14.28%;
+    }
+}
+
+.search__default {
+    display: none;
+    top: 43px;
+}
+
+.navbar__search {
+    &:focus,
+    &:hover {
+        .search__default {
+            display: block;
+        }
+    }
+}
