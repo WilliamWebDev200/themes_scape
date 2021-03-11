@@ -259,5 +259,11 @@ div#main {
         >div {
             margin: 0 15px;
         }
+        &--categories {
+            span {
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }
