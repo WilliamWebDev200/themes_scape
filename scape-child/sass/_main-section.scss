@@ -262,6 +262,7 @@ div#main {
             }
             @media only screen and (max-width: 768px) {
                 font-size: 1.2em !important;
+                line-height: auto;
             }
         }
         @media only screen and (max-width: 768px) {
@@ -275,6 +276,10 @@ div#main {
             a {
                 display: flex;
                 align-items: center;
+                @media only screen and (max-width: 768px) {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
             }
             .author-image {
                 border: 1px solid;

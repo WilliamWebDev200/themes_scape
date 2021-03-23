@@ -16,4 +16,16 @@
     .navbar__middle-ads {
         display: none;
     }
+    a.btn.btn--track.n-mobile-only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header-limit-here .navbar__main {
+        padding: 0px 0;
+    }
+    .searchfrm.navbar__middle-search {
+        display: none;
+    }
 }
