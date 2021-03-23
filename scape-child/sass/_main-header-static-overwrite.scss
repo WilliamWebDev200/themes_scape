@@ -1,0 +1,16 @@
+.header-static {
+    width: 100%;
+    .container {
+        max-width: 1366px;
+    }
+    .free-text p {
+        display: flex;
+        align-items: center;
+    }
+    .inp--search__input {
+        box-sizing: border-box;
+    }
+    .cart-preview.AT3CListWrap {
+        display: none;
+    }
+}

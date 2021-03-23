@@ -9,6 +9,8 @@ $shadow_class = wtbx_option('h'.$header_style.'-shadow') !== '' ? ' ' . wtbx_opt
 $animation  = wtbx_option('h'.$header_style.'-menu-anim') !== '' ? ' header_' . wtbx_option('h'.$header_style.'-menu-anim') : '';
 ?>
 
+
+
 <div id="header-wrapper" class="header-bulkapparel header-desktop header-wrapper header-style-<?php echo esc_attr($header_style . $layout . $borders . $header_skin_class . $header_sticky . $sticky_skin_class . $animation . $shadow_class); ?>">
 	<div id="header-container" class="clearfix">
 		<?php

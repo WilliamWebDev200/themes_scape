@@ -44,7 +44,12 @@ $has_sticky_logo = $sticky_logo_retina !== '' ? ' with_sticky_logo' : '';
 ?>
 
 
-<div class="header-bulkapparel__top">
+<div class="header-limit-here">
+	<?php include(locate_template( 'templates/header/header-static.php' )); // Include mobile top header template ?>
+</div>
+
+
+<div class="header-bulkapparel__top" style="display:none">
 	<div class="header-bulkapparel__logo wtbx_header_logo_wrapper<?php echo esc_attr($has_sticky_logo); ?>">
 		<a class="wtbx_header_logo" href="<?php echo esc_url( home_url('/') ); ?>">
 			<?php

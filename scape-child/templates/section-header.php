@@ -32,4 +32,6 @@ if ( $header_style !== 'off' ) {
 		<?php include(locate_template( 'templates/header/header-style-' . $header_style . '.php' )); // Include necessary header template ?>
 		<?php include(locate_template( 'templates/header/header-mobile-top.php' )); // Include mobile top header template ?>
 	</header><!-- #site-header -->
+
+	<?php //include(locate_template( 'templates/header/header-static.php' )); // Include mobile top header template ?>
 <?php }
