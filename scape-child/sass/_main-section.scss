@@ -196,6 +196,7 @@ div#main {
 .bulk-apparel-blog {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     &__media {
         flex: 0 0 300px;
         max-width: 300px;
@@ -203,7 +204,6 @@ div#main {
         height: 220px;
         border-radius: 10px;
         overflow: hidden;
-        -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
         box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
         div {
             width: 100%;
@@ -215,15 +215,40 @@ div#main {
                 object-position: left;
             }
         }
+        @media only screen and (max-width:1100px) {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            flex: 0 0 40%;
+            max-width: 40%;
+            margin-right: 0;
+        }
     }
     &__holder {
         display: flex;
         align-items: center;
         font-size: 1.5em;
     }
+    &__content {
+        @media only screen and (max-width: 1100px) {
+            max-width: 60%;
+            flex: 0 0 60%;
+            padding-left: 5%;
+        }
+    }
     &__title {
         h1 {
             font-size: 3em !important;
+            line-height: 34px;
+            @media only screen and (max-width: 1100px) {
+                font-size: 2em !important;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 15px;
         }
     }
     &__author-block {
@@ -241,6 +266,10 @@ div#main {
                 width: 100px;
                 height: 100px;
                 margin-right: 10px;
+                @media only screen and (max-width: 768px) {
+                    width: 50px;
+                    height: 50px;
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -262,6 +291,13 @@ div#main {
         &--categories {
             span {
                 display: flex;
+                align-items: center;
+            }
+        }
+        &--read-times {
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                font-size: 18px;
                 align-items: center;
             }
         }
