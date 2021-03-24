@@ -450,6 +450,9 @@ nav#mobile-header {
         display: none !important;
     }
     &__left {
+        .post-media.wtbx-reveal-cont.wtbx_preloader_cont {
+            margin-bottom: 0px;
+        }
         .wtbx_column_wrapper.clearfix {
             .wtbx_column_content {
                 padding: 0 !important;
