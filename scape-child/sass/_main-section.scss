@@ -295,6 +295,7 @@ div#main {
             max-width: 60%;
             flex: 0 0 60%;
             padding-left: 5%;
+            padding-right: 0;
         }
         @media only screen and (max-width: 600px) {
             padding: 10px;
@@ -328,8 +329,9 @@ div#main {
         @media only screen and (max-width: 1100px) {
             display: flex;
             justify-content: flex-start;
-            font-size: 18px;
+            font-size: 18px !important;
             font-weight: bold;
+            align-items: center;
         }
     }
     &__author-block {
