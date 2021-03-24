@@ -1,5 +1,19 @@
 div#main {
     margin-top: 150px;
+    @media only screen and (max-width: 1000px) {
+        margin-top: 0;
+        padding-top: 75px;
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top: 0;
+        padding-top: 75px;
+    }
+}
+
+.wtbx_empty_space_inner {
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
 }
 
 .header-bulkapparel {
@@ -44,6 +58,9 @@ div#main {
         display: flex;
         align-items: center;
         height: auto !important;
+        @media only screen and (max-width: 1000px) {
+            display: none !important;
+        }
         nav.wtbx_header_part.wtbx_menu_nav {
             height: auto !important;
             float: none !important;
@@ -190,6 +207,9 @@ div#main {
     .has-post-thumbnail {
         margin-bottom: 30px !important;
         margin-top: 0 !important;
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -197,9 +217,20 @@ div#main {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @media only screen and (max-width: 1300px) {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    @media only screen and (max-width: 1100px) {
+        width: 100% !important;
+        margin: 0 !important;
+    }
     @media only screen and (max-width: 480px) {
         border: 1px solid #ddd;
         padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
     }
     &__media {
         flex: 0 0 300px;
@@ -219,6 +250,9 @@ div#main {
                 object-position: left;
             }
         }
+        @media only screen and (max-width: 1300px) {
+            margin-right: 0;
+        }
         @media only screen and (max-width:1100px) {
             img {
                 width: 100%;
@@ -233,6 +267,11 @@ div#main {
         @media only screen and (max-width: 480px) {
             flex: 0 0 100%;
             max-width: 100%;
+            height: auto;
+            box-shadow: inherit;
+            >div {
+                margin: 0 !important;
+            }
         }
     }
     &__holder {
@@ -240,23 +279,38 @@ div#main {
         align-items: center;
         font-size: 1.5em;
     }
+    &__mobile-category {
+        display: none;
+        @media only screen and (max-width: 1000px) {
+            display: flex;
+        }
+    }
     &__content {
+        flex: 0 0 70%;
+        max-width: 70%;
+        @media only screen and (max-width: 1300px) {
+            padding: 50px;
+        }
         @media only screen and (max-width: 1100px) {
             max-width: 60%;
             flex: 0 0 60%;
             padding-left: 5%;
         }
+        @media only screen and (max-width: 600px) {
+            padding: 10px;
+        }
         @media only screen and (max-width: 480px) {
             max-width: 100%;
             flex: 0 0 100%;
-            padding: 20px
+            padding: 10px
         }
     }
     &__title {
         margin-bottom: 20px;
-        h1 {
+        .entry-title {
             font-size: 3em !important;
             line-height: 34px;
+            line-height: 1em;
             @media only screen and (max-width: 1100px) {
                 font-size: 2em !important;
             }
@@ -267,6 +321,15 @@ div#main {
         }
         @media only screen and (max-width: 768px) {
             margin-bottom: 15px;
+        }
+    }
+    &__author-titles {
+        width: 100%;
+        @media only screen and (max-width: 1100px) {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 18px;
+            font-weight: bold;
         }
     }
     &__author-block {
@@ -288,9 +351,13 @@ div#main {
                 width: 100px;
                 height: 100px;
                 margin-right: 10px;
+                @media only screen and (max-width: 1100px) {
+                    width: 40px;
+                    height: 40px;
+                }
                 @media only screen and (max-width: 768px) {
-                    width: 50px;
-                    height: 50px;
+                    width: 30px;
+                    height: 30px;
                 }
                 img {
                     width: 100%;
@@ -301,6 +368,12 @@ div#main {
         }
         &--readmore {
             display: none;
+        }
+    }
+    &__column {
+        @media only screen and (max-width: 600px) {
+            flex: 0 0 100%;
+            max-width: 100%;
         }
     }
     &__information {
@@ -319,6 +392,9 @@ div#main {
                 display: flex;
                 align-items: center;
             }
+            @media only screen and (max-width:1000px) {
+                display: none;
+            }
         }
         &--read-times {
             @media only screen and (max-width: 768px) {
@@ -331,4 +407,10 @@ div#main {
             }
         }
     }
+}
+
+nav#mobile-header {
+    left: 0;
+    right: inherit;
+    transform: translate3d(-100%, 0, 0);
 }

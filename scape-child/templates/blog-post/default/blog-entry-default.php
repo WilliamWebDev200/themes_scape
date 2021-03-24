@@ -15,7 +15,7 @@ wtbx_script_queue('sticky-kit');
 
 	<div class="bulk-apparel-blog post-default-inner wtbx-entry-inner<?php echo esc_attr($meta_class); ?>">
 
-		<div class="bulk-apparel-blog__media">
+		<div class="bulk-apparel-blog__media bulk-apparel-blog__column">
 			<?php // Media
 			if ( $preview === 'post_media' ) {
 				if ( file_exists(locate_template('templates/blog-post/formats/blog-format' . $format . '.php')) ) {
@@ -28,13 +28,15 @@ wtbx_script_queue('sticky-kit');
 
 		</div>
 
-		<div class="bulk-apparel-blog__content">
+		<div class="bulk-apparel-blog__content bulk-apparel-blog__column">
 				<div class="bulk-apparel-blog__title">
-					<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Continue reading: %s', 'scape' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Continue reading: %s', 'scape' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<div class="bulk-apparel-blog__mobile-category">category: <?php the_category( ', ' ); ?></div>
 				</div>
 
 				<div class="bulk-apparel-blog__author">
 					<?php if (  !in_array('author-name', $meta_array) || !in_array('categories', $meta_array) ) : ?>
+
 				</div>
 
 				<?php endif;
