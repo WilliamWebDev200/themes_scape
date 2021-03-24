@@ -2,7 +2,7 @@
 	wtbx_js_styles($header_styles);
 } ?>
 
-<div id="page-header" class="<?php echo esc_attr($page_header_classes); ?> page-header-author-wrapper wtbx_parallax_wrapper" data-layout="<?php echo esc_attr($layout_number); ?>" data-decoration="<?php echo esc_attr($decoration_layout); ?>" data-fullscroll="<?php echo esc_attr($scroll_full); ?>" data-skin="<?php echo esc_attr($hero_skin); ?>">
+<div id="page-header" class="bulk-apparel-header <?php echo esc_attr($page_header_classes); ?> page-header-author-wrapper wtbx_parallax_wrapper" data-layout="<?php echo esc_attr($layout_number); ?>" data-decoration="<?php echo esc_attr($decoration_layout); ?>" data-fullscroll="<?php echo esc_attr($scroll_full); ?>" data-skin="<?php echo esc_attr($hero_skin); ?>">
 	<div class="page-header-bg-wrapper">
 		<div class="page-header-bg wtbx-element-reveal wtbx-reveal-cont<?php echo esc_attr($parallax_cont); ?>">
 			<div class="page-header-image-wrapper">

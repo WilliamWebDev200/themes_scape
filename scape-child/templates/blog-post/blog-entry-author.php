@@ -1,5 +1,5 @@
 <?php if ( wtbx_option('post-author-descr') === '1' ) : ?>
-	<div class="author-area clearfix">
+	<div class="author-area clearfix bulk-apparel-blog-detail__author">
 		<div class="author-image">
 			<div class="author-image-inner">
 				<?php echo get_avatar( get_the_author_meta( 'ID' ), 120 ); ?>

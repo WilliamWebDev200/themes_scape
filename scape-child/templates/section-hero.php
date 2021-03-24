@@ -1,8 +1,8 @@
 <?php
-/*	
+/*
 *	---------------------------------------------------------------------
 *	WTBX Template part: hero section
-*	--------------------------------------------------------------------- 
+*	---------------------------------------------------------------------
 */
 ?>
 
@@ -159,7 +159,7 @@ if ( ( $type !== '' && $type !== 'off') || is_author() ) {
 			<?php }
 
 		} elseif ( $type === 'default' ) { ?>
-            
+
 			<?php wtbx_js_styles($header_styles); ?>
 
             <div id="page-header" class="<?php echo esc_attr($page_header_classes); ?> wtbx_parallax_wrapper" data-layout="<?php echo esc_attr($layout_number); ?>" data-decoration="<?php echo esc_attr($decoration_layout); ?>" data-fullscroll="<?php echo esc_attr($scroll_full); ?>" data-skin="<?php echo esc_attr($hero_skin); ?>">
@@ -187,17 +187,24 @@ if ( ( $type !== '' && $type !== 'off') || is_author() ) {
 
 					<?php echo in_array($layout, $layouts_array) ? '<div class="row-inner clearfix"><div class="wtbx-col-sm-12"><div class="page-header-wrapper">' : ''; ?>
 
-					<div class="wtbx-page-title">
+					<div class="wtbx-page-title bulk-apparel-blog-detail__header">
 						<div class="row-inner clearfix">
 							<div class="wtbx-col-sm-12">
-								<h1><?php echo wtbx_get_the_title($postID); ?></h1>
+								<div class="bulk-apparel-blog-detail__header--breadcrumps">
+										<?php if ( $layout !== 'layout-two' ) {
+						echo wtbx_breadcrumbs();
+					} ?>
+								</div>
+								<div class="bulk-apparel-blog-detail__header--title">
+									<h1><?php echo wtbx_get_the_title($postID); ?></h1>
+								</div>
+								<div class="bulk-apparel-blog-detail__header--metas">
+									<?php echo get_template_part( 'templates/blog-post/blog-entry-meta' ); ?>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<?php if ( $layout !== 'layout-two' ) {
-						echo wtbx_breadcrumbs();
-					} ?>
 
 					<?php echo in_array($layout, $layouts_array) ? '</div></div></div>' : ''; ?>
 
