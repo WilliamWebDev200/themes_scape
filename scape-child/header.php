@@ -6,6 +6,8 @@
 		<meta name="format-detection" content="telephone=no">
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="pingback" href="<?php esc_url( bloginfo( 'pingback_url' ) ); ?>" />
+
+
 		<?php wp_head(); ?>
 	</head>
 

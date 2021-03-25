@@ -50,9 +50,13 @@ if ( !empty($layout_js_styles) ) {
             <?php endif; ?>
             </div>
 
-            <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9">
-                <?php
-               // include(locate_template('templates/section-pagination-single-bottom.php')); ?>
+            <!-- <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9"> -->
+            <div class="wtbx-width wtbx-large-12 wtbx-medium-12 wtbx-small-12">
+                <div class="bulk-apparel-blog-detail__next-prev">
+                    <?php
+                include(locate_template('templates/section-pagination-single-bottom.php')); ?>
+                </div>
+
             </div>
 
 	</div><!-- #container -->
@@ -66,7 +70,7 @@ if ( wtbx_option('post-related-enable') && get_post_type() === 'post' ) {
 }
 // Comments
 if ( ( comments_open() || get_comments_number() ) && wtbx_option('post-comments') === '1' ) : ?>
-    <div class="row-inner bulk-apparel-blog-detail__related">
+    <div class="row-inner bulk-apparel-blog-detail__comment">
         <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9">
             <?php comments_template(); ?>
         </div>

@@ -25,9 +25,9 @@ if ( !empty($format) && wtbx_option_sub('post-hide-media', $post_format) !== '1'
 }
 
 // Meta
-// get_template_part( 'templates/blog-post/blog-entry-meta' );
+//get_template_part( 'templates/blog-post/blog-entry-meta' );
 // Title
-// get_template_part( 'templates/blog-post/blog-entry-title' );
+//get_template_part( 'templates/blog-post/blog-entry-title' );
 
 // Content
 get_template_part( 'templates/blog-post/single/blog-entry-content-single' );

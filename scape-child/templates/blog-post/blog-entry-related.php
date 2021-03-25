@@ -33,9 +33,10 @@ $related_query = new WP_Query( $args );
 
 if( $related_query->have_posts() ) : ?>
 
-	<aside class="wtbx-related-posts">
+	<aside class="wtbx-related-posts bulk-apparel-blog-detail__related-post">
         <div class="wtbx-related-posts-inner row-inner">
-            <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9">
+            <!-- <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9"> -->
+            <div class="wtbx-width wtbx-large-12 wtbx-medium-12 wtbx-small-12">
                 <h3 class="wtbx-related-posts-title"><?php echo esc_html__( 'Related Posts', 'scape' ); ?></h3>
 
                 <div class="wtbx-related-posts-container">

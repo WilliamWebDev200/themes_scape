@@ -10,6 +10,10 @@ div#main {
     }
 }
 
+#page-wrap {
+    padding-bottom: 0 !important;
+}
+
 .wtbx_empty_space_inner {
     @media only screen and (max-width: 1000px) {
         display: none;
@@ -181,12 +185,26 @@ div#main {
     &:before {
         display: none !important;
     }
+    @media only screen and (max-width:768px) {
+        padding: 0 !important;
+    }
 }
 
 #page-header {
     max-width: 1230px;
     margin: auto;
     margin-top: 40px;
+    .page-header-inner {
+        .wtbx-page-title {
+            font-family: $font-primary;
+            h1 {
+                font-family: $font-primary;
+                @media only screen and (max-width: 600px) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
 }
 
 .page-sidebar {
@@ -310,8 +328,8 @@ div#main {
         margin-bottom: 20px;
         .entry-title {
             font-size: 3em !important;
-            line-height: 34px;
-            line-height: 1em;
+            // line-height: 34px;
+            line-height: 1.2em;
             @media only screen and (max-width: 1100px) {
                 font-size: 2em !important;
             }
@@ -424,8 +442,8 @@ nav#mobile-header {
             padding: 0;
         }
     }
-    &__related {
-        display: none;
+    &__comment {
+        // display: none;
         >div {
             padding: 0;
             max-width: 100%;
@@ -435,6 +453,27 @@ nav#mobile-header {
         &--breadcrumps {
             .breadcrumbs-path {
                 font-size: 18px;
+                font-family: $font-primary;
+                text-transform: capitalize;
+                .home {
+                    color: $color-blue;
+                }
+                @media only screen and (max-width:480px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        &--title {
+            font-weight: bold;
+            font-size: 1.1em;
+            font-family: $font-primary;
+        }
+        &--metas {
+            .entry-meta.single-post-meta {
+                line-height: initial;
+                font-size: 20px;
+                font-style: italic;
+                font-family: $font-primary;
             }
         }
     }
@@ -450,6 +489,7 @@ nav#mobile-header {
         display: none !important;
     }
     &__left {
+        font-family: $font-primary;
         .post-media.wtbx-reveal-cont.wtbx_preloader_cont {
             margin-bottom: 0px;
         }
@@ -458,12 +498,43 @@ nav#mobile-header {
                 padding: 0 !important;
             }
         }
+        h2,
+        h1 {
+            margin: 0;
+            font-size: 1.9em;
+            font-family: $font-primary;
+            @media only screen and (max-width: 768px) {
+                font-size: 1.2em;
+            }
+            @media only screen and (max-width:480px) {
+                font-size: 1em;
+            }
+        }
+        p {
+            font-family: $font-primary;
+            font-size: 18px;
+            color: $color-black;
+            line-height: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            @media only screen and (max-width: 480px) {
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
     }
-    &__likes {
+    &__likes,
+    &__author,
+    &__comment {
         display: none;
     }
-    &__author {
-        display: none;
+    &__related-post {
+        padding: 20px 0;
+        @media only screen and (max-width: 768px) {
+            .wtbx-related-posts .wtbx-related-post {
+                padding: 15px;
+            }
+        }
     }
 }
 
@@ -471,5 +542,14 @@ nav#mobile-header {
     max-width: 1400px !important;
     .page-header-inner {
         padding: 0 !important;
+    }
+}
+
+.single {
+    @media only screen and (max-width: 768px) {
+        div#main {
+            margin-top: 0 !important;
+            padding-top: 0;
+        }
     }
 }
