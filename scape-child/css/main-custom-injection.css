@@ -528,7 +528,8 @@ nav#mobile-header {
         flex-direction: row; } }
     @media only screen and (max-width: 414px) {
       .bulk-apparel-blog-detail__next-prev--next a {
-        flex-direction: column-reverse !important; } }
+        flex-direction: column-reverse !important;
+        align-items: flex-end; } }
   .bulk-apparel-blog-detail__next-prev--next .wtbx-nav-content {
     text-align: left; }
     @media only screen and (max-width: 600px) {
