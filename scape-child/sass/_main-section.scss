@@ -892,11 +892,25 @@ a.btn.btn--options {
     z-index: 99;
     cursor: pointer;
     @include transition;
-    &:hover {
-        opacity: .8;
+    >div {
+        height: 40px;
+    }
+    .hide {
+        display: none;
+    }
+    &--open {
+        .hide {
+            display: block !important;
+        }
+        .not-open {
+            display: none !important;
+        }
     }
     @media only screen and (max-width: 1000px) {
         display: none !important;
+    }
+    &:hover {
+        opacity: .9;
     }
     svg {
         width: 40px;

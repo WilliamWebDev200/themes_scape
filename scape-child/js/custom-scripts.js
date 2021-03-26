@@ -72,6 +72,7 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
     jQuery(".desktop-sidebar-option").click(function() {
+        jQuery(this).toggleClass('desktop-sidebar-option--open');
         jQuery(".bulk-apparel-blog-detail__left").toggleClass('bulk-apparel-blog-detail__left--sidebar-active');
         jQuery(".bulk-apparel-blog-detail__right").toggleClass('bulk-apparel-blog-detail__right--sidebar-active');
     });

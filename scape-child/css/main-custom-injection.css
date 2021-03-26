@@ -673,11 +673,19 @@ a.btn.btn--options {
   z-index: 99;
   cursor: pointer;
   transition: all 0.3s ease-in-out; }
-  .desktop-sidebar-option:hover {
-    opacity: .8; }
+  .desktop-sidebar-option > div {
+    height: 40px; }
+  .desktop-sidebar-option .hide {
+    display: none; }
+  .desktop-sidebar-option--open .hide {
+    display: block !important; }
+  .desktop-sidebar-option--open .not-open {
+    display: none !important; }
   @media only screen and (max-width: 1000px) {
     .desktop-sidebar-option {
       display: none !important; } }
+  .desktop-sidebar-option:hover {
+    opacity: .9; }
   .desktop-sidebar-option svg {
     width: 40px;
     height: 40px;
