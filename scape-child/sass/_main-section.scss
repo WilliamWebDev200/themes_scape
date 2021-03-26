@@ -890,6 +890,11 @@ a.btn.btn--options {
     bottom: 10%;
     @include shadows;
     z-index: 99;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+        opacity: .8;
+    }
     @media only screen and (max-width: 1000px) {
         display: none !important;
     }
