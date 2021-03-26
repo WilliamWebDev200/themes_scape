@@ -46,8 +46,33 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
     jQuery(".btn--options").click(function() {
-        jQuery(".bulk-apparel-blog-detail__right").toggleClass('bulk-apparel-blog-detail__right--active');
+        jQuery(".mobile-sidebar-option").toggleClass('mobile-sidebar-option--active');
+        jQuery(".mobile-sidebar-option__modal").toggleClass('mobile-sidebar-option__modal--active');
+        jQuery(".mobile-sidebar-option__sidebar").toggleClass(' mobile-sidebar-option__sidebar--slide');
+
     });
+});
+
+jQuery(document).ready(function($) {
+    jQuery(".mobile-sidebar-option__closebox").click(function() {
+        jQuery(".mobile-sidebar-option__modal").removeClass('mobile-sidebar-option__modal--active');
+        jQuery(".mobile-sidebar-option__sidebar").removeClass('mobile-sidebar-option__sidebar--slide');
+    });
+});
+
+jQuery(document).ready(function($) {
+    jQuery(".mobile-sidebar-option__closebox--icon").click(function() {
+        jQuery(".mobile-sidebar-option__modal").removeClass('mobile-sidebar-option__modal--active');
+        jQuery(".mobile-sidebar-option__sidebar").removeClass('mobile-sidebar-option__sidebar--slide');
+    });
+});
 
 
+
+
+jQuery(document).ready(function($) {
+    jQuery(".desktop-sidebar-option").click(function() {
+        jQuery(".bulk-apparel-blog-detail__left").toggleClass('bulk-apparel-blog-detail__left--sidebar-active');
+        jQuery(".bulk-apparel-blog-detail__right").toggleClass('bulk-apparel-blog-detail__right--sidebar-active');
+    });
 });
