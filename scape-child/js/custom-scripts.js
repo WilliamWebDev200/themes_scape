@@ -29,12 +29,10 @@ jQuery(document).ready(function($) {
     });
 
 
-
 });
 
 
 jQuery(document).ready(function($) {
-
     $('.slide-wrapper').slick({
         dots: true,
         infinite: true,
@@ -43,5 +41,13 @@ jQuery(document).ready(function($) {
         fade: true,
         cssEase: 'linear'
     });
+});
+
+
+jQuery(document).ready(function($) {
+    jQuery(".btn--options").click(function() {
+        jQuery(".bulk-apparel-blog-detail__right").toggleClass('bulk-apparel-blog-detail__right--active');
+    });
+
 
 });

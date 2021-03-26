@@ -47,8 +47,8 @@ if ( $nav_layout === 'bottom' || $nav_layout === 'sticky' || $nav_layout === 'im
 	?>
 
 	<div class="wtbx-navigation-wrapper <?php echo esc_attr($post_type); ?>-nav-wrapper wtbx-page-nav-wrapper wtbx-layout-<?php echo esc_attr($nav_layout); ?>">
-		<nav class="wtbx-navigation <?php echo esc_attr($post_type); ?>-nav wtbx-page-nav wtbx-skin-<?php echo esc_attr($skin); ?>">
-			<div class="wtbx-nav-inner <?php echo esc_attr($post_type); ?>-nav-inner row-inner clearfix">
+		<nav class="bulk-apparel-blog-detail__next-prev wtbx-navigation <?php echo esc_attr($post_type); ?>-nav wtbx-page-nav wtbx-skin-<?php echo esc_attr($skin); ?>">
+			<div class="wtbx-nav-inner bulk-apparel-blog-detail__next-prev--wrapper <?php echo esc_attr($post_type); ?>-nav-inner row-inner clearfix">
 				<ul class="wtbx-col-sm-12 wtbx-nav-column">
 
 					<?php // Back button
@@ -65,10 +65,10 @@ if ( $nav_layout === 'bottom' || $nav_layout === 'sticky' || $nav_layout === 'im
 					// Buttons
 					if ( !empty($buttons) ) :
 						previous_post_link(
-							'<li class="wtbx-nav-prev '.$post_type.'-prev clearfix wtbx-element-reveal wtbx-reveal-cont">%link</li>',
+							'<li class="wtbx-nav-prev '.$post_type.'-prev clearfix wtbx-element-reveal wtbx-reveal-cont bulk-apparel-blog-detail__next-prev--item bulk-apparel-blog-detail__next-prev--prev">%link</li>',
 							$prev_thumb.'<div class="wtbx-nav-content"><span class="wtbx-nav-meta wtbx-nav-meta-prev">'.$prev_subtitle.'</span><span class="wtbx-nav-title wtbx-nav-title-prev">'.$prev_label.'</span></div>');
 						next_post_link(
-							'<li class="wtbx-nav-next '.$post_type.'-prev clearfix wtbx-element-reveal wtbx-reveal-cont">%link</li>',
+							'<li class="wtbx-nav-next '.$post_type.'-prev clearfix wtbx-element-reveal wtbx-reveal-cont bulk-apparel-blog-detail__next-prev--item bulk-apparel-blog-detail__next-prev--next">%link</li>',
 							'<div class="wtbx-nav-content"><span class="wtbx-nav-meta wtbx-nav-meta-next">'.$next_subtitle.'</span><span class="wtbx-nav-title wtbx-nav-title-next">'.$next_label.'</span></div>'.$next_thumb);
 					endif; ?>
 				</ul>

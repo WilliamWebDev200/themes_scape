@@ -62,6 +62,8 @@ if ( !empty($layout_js_styles) ) {
 	</div><!-- #container -->
 </article>
 
+<a href="javascript:void(0)" class="btn btn--options"> + </a>
+
 
 <?php
 // Related posts
