@@ -633,6 +633,9 @@ nav#mobile-header {
                         border-right-width: 4px !important;
                     }
                 }
+                @media only screen and (max-width: 414px) {
+                    flex-direction: column !important;
+                }
             }
             .wtbx-nav-thumb {
                 width: $wtbx-nav-thumb-size;
@@ -684,6 +687,9 @@ nav#mobile-header {
                     display: flex !important;
                     align-items: center;
                 }
+                @media only screen and (max-width: 414px) {
+                    padding: 0 !important;
+                }
             }
         }
         a.wtbx-nav-back.post-back {
@@ -698,11 +704,17 @@ nav#mobile-header {
                 @media only screen and (max-width: 600px) {
                     flex-direction: row;
                 }
+                @media only screen and (max-width: 414px) {
+                    flex-direction: column-reverse !important;
+                }
             }
             .wtbx-nav-content {
                 text-align: left;
                 @media only screen and (max-width: 600px) {
                     text-align: right;
+                }
+                @media only screen and (max-width: 414px) {
+                    text-align: right !important;
                 }
             }
             .wtbx-nav-thumb {
