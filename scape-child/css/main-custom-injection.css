@@ -412,7 +412,8 @@ nav#mobile-header {
     max-width: 70%; }
     @media only screen and (max-width: 1000px) {
       .bulk-apparel-blog-detail__left--sidebar-active {
-        display: none !important; } }
+        flex: 0 0 100%;
+        max-width: 100%; } }
   .bulk-apparel-blog-detail__left .wtbx_column_wrapper.clearfix .wtbx_column_content {
     padding: 0 !important; }
   .bulk-apparel-blog-detail__left h2,
