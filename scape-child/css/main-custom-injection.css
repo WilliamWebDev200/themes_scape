@@ -389,6 +389,9 @@ nav#mobile-header {
 .bulk-apparel-blog-detail__block {
   display: flex;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 480px) {
+    .bulk-apparel-blog-detail__block {
+      margin-bottom: 1em !important; } }
 .bulk-apparel-blog-detail__item {
   flex: 0 0 100%;
   max-width: 100%; }
