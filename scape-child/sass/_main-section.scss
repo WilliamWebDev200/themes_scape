@@ -940,3 +940,25 @@ a.wtbx-totop.circle-shadow {
     right: 40px;
     bottom: -17px;
 }
+
+#header-wrapper {
+    .wtbx_menu_nav {
+        .menu {
+            > {
+                li {
+                    >.sub-menu {
+                        .sub-menu {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .sub-menu-link {
+            color: $color-black !important;
+            padding: 10px 15px;
+            text-transform: capitalize;
+        }
+    }
+}
