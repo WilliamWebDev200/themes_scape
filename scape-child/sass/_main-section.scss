@@ -959,6 +959,15 @@ a.wtbx-totop.circle-shadow {
             color: $color-black !important;
             padding: 10px 15px;
             text-transform: capitalize;
+            &:hover {
+                font-weight: 700 !important;
+                background-color: $color-lightblue;
+            }
+        }
+        .sub-menu-item {
+            &:before {
+                background: transparent !important;
+            }
         }
     }
 }
