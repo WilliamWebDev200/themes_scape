@@ -6,10 +6,19 @@
     .free-text p {
         display: flex;
         align-items: center;
+        font-family: $font-secondary;
+    }
+    .free-text {
+        text-align: left;
+        h2 {
+            font-size: 25px;
+            font-family: $font-secondary;
+        }
     }
     .inp--search__input {
         box-sizing: border-box;
         border-radius: 0;
+        font-family: $font-secondary;
     }
     .cart-preview.AT3CListWrap {
         display: none;

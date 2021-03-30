@@ -47,35 +47,3 @@ $has_sticky_logo = $sticky_logo_retina !== '' ? ' with_sticky_logo' : '';
 <div class="header-limit-here">
 	<?php include(locate_template( 'templates/header/header-static.php' )); // Include mobile top header template ?>
 </div>
-
-
-<div class="header-bulkapparel__top" style="display:none">
-	<div class="header-bulkapparel__logo wtbx_header_logo_wrapper<?php echo esc_attr($has_sticky_logo); ?>">
-		<a class="wtbx_header_logo" href="<?php echo esc_url( home_url('/') ); ?>">
-			<?php
-
-			if ( $logo_retina === '' ) : ?>
-				<span class="wtbx_logo_title"><?php bloginfo('name') ?></span>
-			<?php endif;
-
-			// default logo
-			if ( $logo_retina !== '' ) : ?>
-				<img class="wtbx_logo_img" width="<?php echo esc_attr($logo_width); ?>" height="<?php echo esc_attr($logo_height); ?>" src="<?php echo esc_url($logo_retina); ?>" alt="<?php esc_attr(bloginfo()); ?>" />
-			<?php endif;
-
-			// logo for dynamic header
-			if ( $wtbx_fullscreen_slider ) :
-				if ( $logo_retina !== '' && $logo_retina_op !== $logo_retina  ) : ?>
-					<img class="wtbx_logo_img wtbx_logo_op" width="<?php echo esc_attr($logo_width_op); ?>" height="<?php echo esc_attr($logo_height_op); ?>" src="<?php echo esc_url($logo_retina_op); ?>" alt="<?php esc_attr(bloginfo()); ?>" />
-				<?php endif;
-			endif;
-
-			// sticky header logo
-			if ( !in_array($header_style, array('m')) ) :
-				if ( $sticky_logo_retina !== '' ) : ?>
-					<img class="wtbx_logo_img wtbx_logo_sticky" width="<?php echo esc_attr($logo_width); ?>" height="<?php echo esc_attr($logo_height); ?>" src="<?php echo esc_url($sticky_logo_retina); ?>" alt="<?php esc_attr(bloginfo()); ?>" />
-				<?php endif;
-			endif; ?>
-		</a>
-	</div>
-</div>

@@ -1,3 +1,4 @@
+$global-max-width: 1200px;
 div#main {
     margin-top: 150px;
     @media only screen and (max-width: 1000px) {
@@ -45,6 +46,9 @@ div#main {
         max-width: 100% !important;
         width: 100% !important;
         padding: 0 !important;
+        .header-static__logo-icons {
+            width: 280px;
+        }
     }
     &__logo {
         position: inherit !important;
@@ -68,16 +72,86 @@ div#main {
         nav.wtbx_header_part.wtbx_menu_nav {
             height: auto !important;
             float: none !important;
-            max-width: 1400px;
+            // max-width: 1400px;
+            max-width: $global-max-width !important;
             margin: auto;
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
             li {
+                margin-right: 0;
                 a {
                     height: auto !important;
                     line-height: 24px !important;
                     color: $color-white !important;
                     padding: 15px;
+                    font-family: $font-secondary;
+                    font-size: 18px !important;
+                    &:hover {
+                        background: $color-white;
+                        color: $color-gray !important;
+                    }
                 }
             }
+        }
+    }
+}
+
+.header-limit-here {
+    .navbar .container {
+        max-width: $global-max-width;
+    }
+    .btn--my-account {
+        font-family: $font-secondary;
+    }
+    .btn--track__label {
+        font-family: $font-secondary;
+    }
+    .navbar__login {
+        &:hover {
+            .login-floater {
+                display: block !important;
+            }
+        }
+    }
+    .inp-group {
+        a {
+            display: block;
+            text-align: left;
+        }
+        label {
+            text-align: left;
+            margin: 0 !important;
+            color: $color-gray;
+        }
+    }
+    .login-floater__footer {
+        font-family: $font-secondary;
+        color: $color-gray;
+        p {
+            margin: 0 !important;
+        }
+    }
+    .btn--primary {
+        padding: 5px 20px !important;
+    }
+    .inp--search {
+         ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: $color-gray;
+        }
+         ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: $color-gray;
+        }
+         :-ms-input-placeholder {
+            /* IE 10+ */
+            color: $color-gray;
+        }
+         :-moz-placeholder {
+            /* Firefox 18- */
+            color: $color-gray;
         }
     }
 }
@@ -235,6 +309,7 @@ div#main {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
     @media only screen and (max-width: 1300px) {
         width: 100% !important;
         margin: 0 !important;
@@ -453,7 +528,8 @@ nav#mobile-header {
         }
     }
     &__container {
-        max-width: 1400px !important;
+        // max-width: 1400px !important;
+        max-width: 1200px !important;
         #content {
             padding: 0;
         }
@@ -466,6 +542,10 @@ nav#mobile-header {
         }
     }
     &__header {
+        max-width: $global-max-width;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
         &--breadcrumps {
             .breadcrumbs-path {
                 font-size: 18px;

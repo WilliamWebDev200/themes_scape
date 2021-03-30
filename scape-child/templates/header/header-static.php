@@ -1,3 +1,8 @@
+<?php
+$link_url = 'https://www.bulkapparel.com/';
+?>
+
+
 <header class="header-static">
 <nav class="navbar">
 <div class="navbar__main">
@@ -25,10 +30,10 @@
 </div>
 
 <div class="navbar__ads n-desktop-only header-static__item">
-<a href="https://stage300.bulkapparel.com/cms/page/shipping" class="ads-free-shipping">
+<a href="<?php echo $link_url;?>cms/page/shipping" class="ads-free-shipping">
 <div class="free-text">
 <h2>Free Shipping</h2>
-<p>on order over <span class="price-bold">$199.00</span></p>
+<p>on order over <span class="price-bold">$99.00</span></p>
 </div>
 <div class="free-icon">
 <span class="icon">
@@ -89,7 +94,7 @@
 </span>
 </div>
 </a>
-<a href="https://stage300.bulkapparel.com/tracking" class="btn btn--track">
+<a href="<?php echo $link_url;?>tracking" class="btn btn--track">
 <figure>
 <svg class="btn--track__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 <path d="M11.489 5.014H5.512a.498.498 0 00-.498.498v5.976c0 .275.223.498.498.498h5.977a.498.498 0 00.498-.498V5.512a.498.498 0 00-.498-.498zm-3.487.996H9v.996h-.997V6.01zm2.989 4.98H6.01V6.01h.995v1.494c0 .275.223.498.498.498h1.993a.498.498 0 00.498-.498V6.01h.996v4.98z"></path>
@@ -105,10 +110,10 @@ Track your order
 <form name="frmsearch" id="searchfrm" class="searchfrm">
 
 <div class="inp--search">
-    <a href="https://stage300.bulkapparel.com">
+    <a href="<?php echo $link_url;?>">
     <input class="inp inp--search__input" type="search" placeholder="Search Products, Brands" name="q" id="q" value="" autocomplete="off" maxlength="40" onkeypress="if (!window.__cfRLUnblockHandlers) return false; return onlyAlphabets(event,this);">
     </a>
-<a href="https://stage300.bulkapparel.com" class="btn inp--search__button">
+<a href="<?php echo $link_url;?>" class="btn inp--search__button">
     <span class="icon">
     <svg width="19" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path d="M18.66 16.66l-5.332-5.116a6.764 6.764 0 001.62-4.378c0-3.844-3.258-6.97-7.264-6.97C3.679.195.42 3.321.42 7.165c0 3.843 3.259 6.97 7.264 6.97a7.417 7.417 0 004.563-1.554l5.331 5.115c.15.144.392.144.54 0l.541-.518a.357.357 0 000-.52zM7.683 12.669c-3.162 0-5.735-2.469-5.735-5.503 0-3.035 2.573-5.503 5.735-5.503 3.163 0 5.735 2.468 5.735 5.503 0 3.034-2.572 5.503-5.735 5.503z"></path>
@@ -116,67 +121,17 @@ Track your order
     </span>
 </a>
 </div>
-<div id="ajax_response"></div>
-
-
-</form>
-
-<div id="search-auto" class="search search-auto">
-<div class="search__live">
-<div class="search__live-header">
-<h1>You Search <span></span></h1>
-</div>
-<ul class="search__live-list" id="result-image">
-
-</ul>
-
-<div class="search__help">
-<h1 class="search__help-title">How Can We Help?</h1>
-<ul class="search__help-list">
-<li class="search__help-items">
-<a href="https://stage300.bulkapparel.com/cms/page/shipping">Shipping</a>
-</li>
-<li class="search__help-items">
-<a href="https://stage300.bulkapparel.com/tracking">Tracking</a>
-</li>
-<li class="search__help-items">
-<a href="https://stage300.bulkapparel.com/cms/page/help">Help / FAQ</a>
-</li>
-<li class="search__help-items">
-<a href="https://stage300.bulkapparel.com/cms/page/returns">Return Policy</a>
-</li>
-</ul>
-</div>
 
 </div>
-<div class="search__auto">
-<div class="search__auto-header">
-<button class="search__auto-exit" id="s-auto-exit">✕</button>
-</div>
-<ul class="search__auto-result" id="result-text">
 
- </ul>
-</div>
-</div>
-
-
-<div class="search__default" style="display:none;" id="search__default">
-<button class="search__default-exit" id="s-default-exit">✕</button>
-<h3>Popular Searches</h3>
-<ul class="search__popular"></ul>
-<h3>Recent Searches</h3>
-<ul class="search__recent"></ul>
-</div>
-
-</div>
 <div class="navbar__action">
-<a href="https://stage300.bulkapparel.com//tracking" class="btn btn--track n-mobile-only">
+<a href="<?php echo $link_url;?>tracking" class="btn btn--track n-mobile-only">
 <div class="btn--track__label">
 Track Order
 </div>
 </a>
 <div class="navbar__login navbar__login--mobile">
-<a href="https://stage300.bulkapparel.com/login" class="btn btn--icon n-mobile-only">
+<a href="<?php echo $link_url;?>login" class="btn btn--icon n-mobile-only">
 <span class="icon">
 
 <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +140,7 @@ Track Order
 </span>
 </a>
 
-<a class="btn btn--my-account flex-pc-only" href="https://stage300.bulkapparel.com/login" id="showLogin">
+<a class="btn btn--my-account flex-pc-only" href="<?php echo $link_url;?>login" id="showLogin">
 My Account
 <span>
 
@@ -199,28 +154,28 @@ My Account
 <div class="login-floater">
 <form name="frmLoginpop" id="frmLoginpop" method="post" action="" novalidate="novalidate">
 <div class="row">
-<div class="col-12">
 
-<div class="errordivpop" style="margin-top: 10px;color:red;padding-bottom: 20px;display: block;">
-<label></label></div>
+<div class="col-12 mb-2">
+<div class="inp-group">
+    <a href="<?php echo $link_url;?>">
+        <label for="uemailpop">Email</label>
+        <input type="email" class="validate[required,custom[email]] inp inp--primary" name="uemailpop" id="uemailpop" value="" autocomplete="off">
+    </a>
+</div>
 </div>
 <div class="col-12 mb-2">
 <div class="inp-group">
-<label for="uemailpop">Email</label>
-<input type="email" class="validate[required,custom[email]] inp inp--primary" name="uemailpop" id="uemailpop" value="" autocomplete="off">
-</div>
-</div>
-<div class="col-12 mb-2">
-<div class="inp-group">
-<label for="upasswordpop">Password</label>
-<input type="password" name="upasswordpop" class="validate[required,minSize[5],maxSize[12]] inp inp--primary" id="upasswordpop" value="">
+    <a href="<?php echo $link_url;?>">
+        <label for="upasswordpop">Password</label>
+        <input type="password" name="upasswordpop" class="validate[required,minSize[5],maxSize[12]] inp inp--primary" id="upasswordpop" value="">
+    </a>
 </div>
  </div>
 <div class="col-12 mb-3" id="sid">
 <div class="login-floater__action">
-<button type="submit" name="loginpop" id="loginpop" class="btn btn--primary mr-auto">
+<a href="<?php echo $link_url;?>" type="submit" name="loginpop" id="loginpop" class="btn btn--primary mr-auto">
 Login
-</button>
+</a>
 <label style="font-size: 14px;margin-top:12px">
 <input id="my-checkpop" name="my-checkpop" type="checkbox"> Keep me logged in
 </label>
@@ -229,8 +184,8 @@ Login
 <div class="col-12 forget-row">
 
 <div class="login-floater__footer">
-<p style="margin-bottom: 12px;font-size: 18px">Don't have an account? <a href="https://stage300.bulkapparel.com/login" style="float: none;font-style: normal;">Register Now!</a></p>
-<a href="https://stage300.bulkapparel.com/forgotpassword" style="float: none;font-style: normal;font-size: 18px">Forgot
+<p style="margin-bottom: 12px;font-size: 18px">Don't have an account? <a href="<?php echo $link_url;?>login" style="float: none;font-style: normal;">Register Now!</a></p>
+<a href="<?php echo $link_url;?>forgotpassword" style="float: none;font-style: normal;font-size: 18px">Forgot
 Password?</a>
 </div>
 
@@ -242,7 +197,7 @@ Password?</a>
 
 </div>
 <div class="navbar__cart">
-<a href="https://stage300.bulkapparel.com/cart" class="btn btn--icon">
+<a href="<?php echo $link_url;?>cart" class="btn btn--icon">
 <span class="icon">
 
 <svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg">
