@@ -75,5 +75,7 @@ jQuery(document).ready(function($) {
         jQuery(this).toggleClass('desktop-sidebar-option--open');
         jQuery(".bulk-apparel-blog-detail__left").toggleClass('bulk-apparel-blog-detail__left--sidebar-active');
         jQuery(".bulk-apparel-blog-detail__right").toggleClass('bulk-apparel-blog-detail__right--sidebar-active');
+        jQuery(".archive-bulk-apparel__left").toggleClass('archive-bulk-apparel__left--sidebar-active');
+        jQuery(".archive-bulk-apparel__right").toggleClass('archive-bulk-apparel__right--sidebar-active');
     });
 });

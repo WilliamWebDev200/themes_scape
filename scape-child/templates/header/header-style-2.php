@@ -27,7 +27,9 @@ $animation  = wtbx_option('h'.$header_style.'-menu-anim') !== '' ? ' header_' . 
 								foreach ($items as $item => $props) {
 									include(locate_template('templates/header/parts/' . $props['id'] . '.php'));
 								}
-								?></div>
+								?>
+
+							</div>
 						<?php }
 						?></div>
 				</div>
