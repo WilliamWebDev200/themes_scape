@@ -117,53 +117,12 @@ Track your order
 
 <!-- navbar__right-holder -->
 <div class="navbar__right-holder">
-        <div class="navbar__right-holder--desktop">
+    <div class="navbar__right-holder--desktop">
             <?php echo do_shortcode('[content_block slug=thumbnails]'); ?>
-        </div>
+    </div>
 
-        <div class="navbar__right-holder--mobile">
-
-        <div class="navbar__action">
-
-<div class="navbar__login navbar__login--mobile">
-<a href="https://www.bulkapparel.com/login" class="btn btn--icon n-mobile-only">
-<span class="icon">
-
-<svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.018.001C7.228.001.1 7.128.1 15.92c0 8.79 7.127 15.917 15.918 15.917 8.792 0 15.918-7.126 15.918-15.917S24.81 0 16.018 0zm0 4.76a5.265 5.265 0 110 10.53 5.265 5.265 0 010-10.53zm-.004 22.914a11.682 11.682 0 01-7.607-2.806 2.244 2.244 0 01-.787-1.705c0-2.949 2.386-5.309 5.335-5.309h6.127c2.95 0 5.327 2.36 5.327 5.309 0 .656-.287 1.279-.787 1.705a11.678 11.678 0 01-7.608 2.806z"></path>
-</svg>
-</span>
-</a>
-
-<a class="btn btn--my-account flex-pc-only" href="https://www.bulkapparel.com/login" id="showLogin">
-My Account
-<span>
-
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
-</svg></span>
-</a>
-
-
-
-</div>
-<div class="navbar__cart">
-<a href="https://www.bulkapparel.com/cart" class="btn btn--icon">
-<span class="icon">
-
-<svg viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.783 23.257c1.956 0 3.523 1.291 3.523 2.885 0 1.594-1.567 2.885-3.523 2.885-1.956 0-3.54-1.291-3.54-2.885 0-1.594 1.584-2.885 3.54-2.885zM7.08 23.257c1.957 0 3.524 1.291 3.524 2.885 0 1.594-1.567 2.885-3.523 2.885-1.956 0-3.54-1.291-3.54-2.885 0-1.594 1.584-2.885 3.54-2.885zM22.836 16.045H9.648c-1.328 0-2.488-.598-3.098-1.485L.22 5.198A1.2 1.2 0 010 4.506c0-.8.796-1.442 1.77-1.442h26.173L29.625.179h5.78v2.885h-3.541L25.5 14.004l2.39 3.534c.274.419.433.887.433 1.392 0 1.594-1.584 2.885-3.54 2.885H3.54V18.93h20.49c.248 0 .443-.159.443-.36a.294.294 0 00-.053-.174l-1.584-2.35z"></path>
-</svg>
-</span>
-</a>
-<div class="navbar__cart-price totel-value" id="sbagid"><p class="word">$0.00 </p>
-<span class="btn--icon__count">0</span></div>
-
-</div>
-</div>
-
-
+    <div class="navbar__right-holder--mobile">
+    <?php echo do_shortcode('[content_block slug=thumbnails]'); ?>
     </div>
 </div>
 <!-- navbar__right-holder -->
@@ -179,10 +138,7 @@ My Account
     <div class="navbar__full-desktop">
         <?php echo do_shortcode('[content_block slug=thumbnails]'); ?>
     </div>
-
   </div>
-
-
 
 </nav>
 </header>

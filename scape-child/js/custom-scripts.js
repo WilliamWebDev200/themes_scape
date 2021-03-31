@@ -79,3 +79,36 @@ jQuery(document).ready(function($) {
         jQuery(".archive-bulk-apparel__right").toggleClass('archive-bulk-apparel__right--sidebar-active');
     });
 });
+
+
+
+jQuery(document).ready(function($) {
+    jQuery(".navbar__right-holder--mobile .thumbnails-box__item--one").click(function() {
+        jQuery(".active--link").removeClass('active--link');
+        jQuery(this).toggleClass('active--link');
+        jQuery(".navbar__full-desktop").toggleClass('active--one');
+        jQuery(".navbar__full-desktop").removeClass('active--two');
+    });
+    jQuery(".navbar__right-holder--mobile .thumbnails-box__item--two").click(function() {
+        jQuery(".active--link").removeClass('active--link');
+        jQuery(this).toggleClass('active--link');
+        jQuery(".navbar__full-desktop").toggleClass('active--two');
+        jQuery(".navbar__full-desktop").removeClass('active--one');
+        jQuery(".navbar__full-desktop").removeClass('active--three');
+        jQuery(".navbar__full-desktop").removeClass('active--four');
+    });
+    jQuery(".navbar__right-holder--mobile .thumbnails-box__item--three").click(function() {
+        jQuery(".navbar__full-desktop").toggleClass('active--three');
+        jQuery(".navbar__full-desktop").removeClass('active--one');
+        jQuery(".navbar__full-desktop").removeClass('active--two');
+        jQuery(".navbar__full-desktop").removeClass('active--four');
+    });
+    jQuery(".navbar__right-holder--mobile .thumbnails-box__item--four").click(function() {
+        jQuery(".active--link").removeClass('active--link');
+        jQuery(this).toggleClass('active--link');
+        jQuery(".navbar__full-desktop").toggleClass('active--four');
+        jQuery(".navbar__full-desktop").removeClass('active--one');
+        jQuery(".navbar__full-desktop").removeClass('active--two');
+        jQuery(".navbar__full-desktop").removeClass('active--three');
+    });
+});

@@ -80,17 +80,42 @@ header#site-header {
             max-width: inherit;
         }
         &--desktop {
-            @media only screen and (max-width: 1100px) {
+            @media only screen and (max-width: 1000px) {
                 display: none;
             }
         }
         &--mobile {
             display: none;
-            @media only screen and (max-width: 1100px) {
+            @media only screen and (max-width: 1000px) {
                 display: flex;
             }
             a {
                 margin-left: 20px;
+            }
+            .thumbnails-box__item .wtbx_vc_text_element {
+                display: none !important;
+            }
+            .thumbnails-box__item .wpb_single_image {
+                height: 35px !important;
+                * {
+                    height: 100% !important;
+                    display: block !important;
+                }
+                img {
+                    transform: scale(.9);
+                }
+            }
+            .thumbnails-box__item>div {
+                margin: 5px auto;
+                padding: 5px;
+                border: 0 !important;
+            }
+            .thumbnails-box .wtbx_row_content_inner.clearfix {
+                flex-wrap: inherit !important;
+            }
+            .thumbnails-box__item {
+                flex: inherit !important;
+                max-width: inherit !important;
             }
         }
     }
@@ -119,7 +144,32 @@ header#site-header {
         display: none;
         @media only screen and (max-width: 1100px) {
             display: flex;
-            margin-top: 25px;
+            margin-top: 5px;
+        }
+        .thumbnails-box__item {
+            display: none;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        &.active--one {
+            .thumbnails-box__item--one {
+                display: block;
+            }
+        }
+        &.active--two {
+            .thumbnails-box__item--two {
+                display: block;
+            }
+        }
+        &.active--three {
+            .thumbnails-box__item--three {
+                display: block;
+            }
+        }
+        &.active--four {
+            .thumbnails-box__item--four {
+                display: block;
+            }
         }
     }
     .btn--icon {
