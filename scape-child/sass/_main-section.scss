@@ -80,13 +80,13 @@ header#site-header {
             max-width: inherit;
         }
         &--desktop {
-            @media only screen and (max-width: 1000px) {
+            @media only screen and (max-width: 1099px) {
                 display: none;
             }
         }
         &--mobile {
             display: none;
-            @media only screen and (max-width: 1000px) {
+            @media only screen and (max-width: 1099px) {
                 display: flex;
             }
             a {
@@ -150,6 +150,20 @@ header#site-header {
             display: none;
             flex: 0 0 100%;
             max-width: 100%;
+            .wpb_single_image {
+                flex: 0 0 60px;
+                max-width: 60px;
+            }
+            &.active--link {
+                background: #f1f1f1 !important;
+            }
+            .wtbx_vc_text_element .wtbx_text_element_inner {
+                font-size: 17px;
+                line-height: 20px;
+            }
+            .wtbx_vc_text_element strong {
+                font-size: 16px;
+            }
         }
         &.active--one {
             .thumbnails-box__item--one {
