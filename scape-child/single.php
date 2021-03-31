@@ -35,6 +35,17 @@ if ( !empty($layout_js_styles) ) {
 
                 <?php endwhile; ?>
 
+                <div class="bulk-apparel-blog-detail__mobile-date">
+						<?php if ( !in_array('date', $meta_array) ) : ?>
+							    Published Date:
+								<div class="meta meta-date wtbx-text">
+								<span class="m"><?php echo get_the_date('M'); ?></span>
+								<span class="d"><?php echo get_the_date('d'); ?></span>,
+								<span class="m"><?php echo get_the_date('Y'); ?></span>
+								</div>
+						<?php endif; ?>
+					</div>
+
             </div><!-- #content -->
 
             <?php if ( in_array( $wtbx_layout['sidebar'], array('sidebar_left', 'sidebar_left_sticky', 'sidebar_right', 'sidebar_right_sticky') ) && $wtbx_layout['sidebar_widgetarea'] !== 'none' && is_active_sidebar($wtbx_layout['sidebar_widgetarea']) )  : ?>

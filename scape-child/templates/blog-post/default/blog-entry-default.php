@@ -39,6 +39,17 @@ wtbx_script_queue('sticky-kit');
 				<div class="bulk-apparel-blog__title">
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Continue reading: %s', 'scape' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<div class="bulk-apparel-blog__mobile-category">category: <?php the_category( ', ' ); ?></div>
+
+					<div class="bulk-apparel-blog__mobile-date">
+						<?php if ( !in_array('date', $meta_array) ) : ?>
+							    Published Date:
+								<div class="meta meta-date wtbx-text">
+								<span class="m"><?php echo get_the_date('M'); ?></span>
+								<span class="d"><?php echo get_the_date('d'); ?></span>,
+								<span class="m"><?php echo get_the_date('Y'); ?></span>
+								</div>
+						<?php endif; ?>
+					</div>
 				</div>
 
 				<div class="bulk-apparel-blog__author">

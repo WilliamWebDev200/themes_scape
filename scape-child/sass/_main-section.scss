@@ -434,6 +434,12 @@ div#main {
             align-items: center;
         }
     }
+    &__mobile-date {
+        display: none;
+        @media only screen and (max-width: 768px) {
+            display: flex;
+        }
+    }
     &__author-block {
         &--image-author {
             display: flex;
