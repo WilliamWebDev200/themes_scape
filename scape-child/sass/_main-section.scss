@@ -872,6 +872,9 @@ nav#mobile-header {
         max-width: 1200px !important;
         #content {
             padding: 0;
+            >div {
+                padding: 0;
+            }
         }
     }
     &__comment {
@@ -1148,6 +1151,9 @@ nav#mobile-header {
                 }
             }
         }
+    }
+    &__mobile-date {
+        display: none;
     }
 }
 
