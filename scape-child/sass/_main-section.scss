@@ -75,9 +75,13 @@ header#site-header {
         flex: 0 0 50%;
         max-width: 50%;
         justify-content: flex-end;
-        @media only screen and (max-width: 1100px) {
+        // @media only screen and (max-width: 1100px) {
+        //     flex: inherit;
+        //     max-width: inherit;
+        // }
+        @media only screen and (max-width: 600px) {
+            max-width: 100%;
             flex: inherit;
-            max-width: inherit;
         }
         &--desktop {
             @media only screen and (max-width: 1099px) {
@@ -659,6 +663,19 @@ header#site-header {
         @media only screen and (max-width: 1000px) {
             display: flex;
         }
+        a {
+            background: $color-lightblue;
+            padding: 0 10px;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 24px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            border-radius: 100px;
+            margin: 0 5px;
+            color: $color-black;
+        }
     }
     &__content {
         flex: 0 0 70%;
@@ -700,6 +717,7 @@ header#site-header {
             @media only screen and (max-width: 768px) {
                 font-size: 1.2em !important;
                 line-height: auto;
+                margin-bottom: 10px !important;
             }
         }
         @media only screen and (max-width: 768px) {
