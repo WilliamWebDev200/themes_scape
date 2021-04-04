@@ -22,7 +22,7 @@ $format = $post_format ?  '-' . $post_format : '';
 		<div class="post-entry-header">
 			<?php if ( !in_array('categories', $meta_array) ) : ?>
             <div class="meta-category">
-                <span class="category-list"><?php the_category( ', ' ); ?></span>
+                <span class="category-list"><?php the_category( ' ' ); ?></span>
             </div>
 			<?php endif; ?>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Continue reading: %s', 'scape' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>

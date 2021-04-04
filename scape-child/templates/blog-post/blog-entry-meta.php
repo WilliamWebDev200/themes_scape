@@ -10,7 +10,7 @@
 
 	<?php if ( wtbx_option('post-category') === '1' && has_category() ) : ?>
 		<span class="meta-category">
-            <?php echo esc_html__( 'in', 'scape' ); ?><span class="category-list"><?php the_category( ', ' ); ?></span>
+            <?php echo esc_html__( 'in', 'scape' ); ?><span class="category-list"><?php the_category( '' ); ?></span>
 		</span>
 	<?php endif; ?>
 

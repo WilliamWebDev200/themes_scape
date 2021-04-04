@@ -104,7 +104,7 @@ wtbx_script_queue('sticky-kit');
 
 												<?php if ( !in_array('categories', $meta_array) ) : ?>
 													<span class="meta meta-category bulk-apparel-blog__information--categories">
-														<span class="category-list"><?php the_category( ', ' ); ?></span>
+														<span class="category-list"><?php the_category( ' ' ); ?></span>
 													</span>
 												<?php endif; ?>
 												</div>
