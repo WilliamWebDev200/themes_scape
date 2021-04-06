@@ -67,4 +67,6 @@ if ( !empty($layout_js_styles) ) {
 
 	</div><!-- #container -->
 
+
+
 <?php get_footer(); ?>

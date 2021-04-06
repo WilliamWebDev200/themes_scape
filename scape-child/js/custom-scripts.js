@@ -112,3 +112,14 @@ jQuery(document).ready(function($) {
         jQuery(".navbar__full-desktop").removeClass('active--three');
     });
 });
+
+
+
+
+
+jQuery(document).ready(function($) {
+    jQuery(".btn--open-search").click(function() {
+        jQuery(".seacch-control").toggleClass('seacch-control--open');
+
+    });
+});

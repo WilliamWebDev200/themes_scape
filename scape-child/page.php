@@ -31,6 +31,8 @@ if ( $wtbx_page_nav !== '' || $wtbx_slider_nav !== '' ) {
 }
 ?>
 
+
+
 	<div id="container" class="row-inner <?php echo trim(esc_attr('page-template-'.$wtbx_page_template . ' ' . ( is_active_sidebar($wtbx_layout['sidebar_widgetarea']) || $wtbx_layout['sidebar'] === 'no_sidebar' ? $wtbx_layout['sidebar'] : '') . $wtbx_layout['fullwidth'])); ?>">
 		<div id="content">
 
@@ -68,5 +70,8 @@ if ( $wtbx_page_nav !== '' || $wtbx_slider_nav !== '' ) {
 		<?php endif; ?>
 
 	</div><!-- #container -->
+
+
+
 
 <?php get_footer(); ?>
