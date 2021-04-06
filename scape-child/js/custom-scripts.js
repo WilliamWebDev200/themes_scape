@@ -117,9 +117,9 @@ jQuery(document).ready(function($) {
 
 
 
-jQuery(document).ready(function($) {
-    jQuery(".btn--open-search").click(function() {
-        jQuery(".seacch-control").toggleClass('seacch-control--open');
+// jQuery(document).ready(function($) {
+//     jQuery(".btn--open-search").click(function() {
+//         jQuery(".seacch-control").toggleClass('seacch-control--open');
 
-    });
-});
+//     });
+// });
