@@ -88,6 +88,8 @@ jQuery(document).ready(function($) {
         jQuery(this).toggleClass('active--link');
         jQuery(".navbar__full-desktop").toggleClass('active--one');
         jQuery(".navbar__full-desktop").removeClass('active--two');
+        jQuery(".navbar__full-desktop").removeClass('active--three');
+        jQuery(".navbar__full-desktop").removeClass('active--four');
     });
     jQuery(".navbar__right-holder--mobile .thumbnails-box__item--two").click(function() {
         jQuery(".active--link").removeClass('active--link');
