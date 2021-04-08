@@ -467,6 +467,15 @@ header#site-header {
             color: $color-gray;
         }
     }
+    @media only screen and (max-width:320px) {
+        .navbar__logo {
+            width: 120px !important;
+        }
+        .header-static__logo-icons {
+            width: 217px !important;
+            margin-right: 5px;
+        }
+    }
 }
 
 .bulkapparel-footer {
