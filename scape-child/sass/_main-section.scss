@@ -304,7 +304,7 @@ header#site-header {
                     box-shadow: none;
                 }
             }
-            @media only screen and (max-width:1000px) {
+            @media only screen and (max-width:1024px) {
                 flex: 0 0 50%;
                 margin-bottom: 10px;
                 max-width: 50%;
@@ -314,6 +314,11 @@ header#site-header {
                     margin: 5px auto;
                     padding: 10px;
                     border-radius: 10px;
+                    border: 1px solid $color-gray;
+                }
+            }
+            @media only screen and (max-width:1089px) {
+                >div {
                     border: 1px solid $color-gray;
                 }
             }
@@ -571,6 +576,21 @@ header#site-header {
                         display: block;
                     }
                 }
+            }
+        }
+    }
+    &__links {
+        .wtbx_inner_row_content_inner.clearfix {
+            display: flex;
+        }
+        @media only screen and (max-width:600px) {
+            .wtbx_inner_row_content_inner.clearfix {
+                display: flex;
+                flex-wrap: wrap !important;
+            }
+            .bulkapparel-footer__menu {
+                flex: 0 0 50%;
+                max-width: 50%;
             }
         }
     }
